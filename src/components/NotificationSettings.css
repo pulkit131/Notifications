@@ -1,0 +1,104 @@
+.notification-settings {
+    border-radius: var(--Corner-None, 0rem) 2.5rem 2.5rem var(--Corner-None, 0rem);
+    background: linear-gradient(180deg, rgba(217, 217, 217, 0.50) 0%, rgba(92, 92, 92, 0.50) 100%);
+    padding: 20px;
+    width: 300px;
+    font-family: 'Arial', sans-serif;
+    color: #515062;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF7E48;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 6.25rem; /* 156.25% */
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #FF7F50;
+    font-weight: 600;
+  }
+  
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #4CAF50;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(14px);
+  }
+  
+  .settings label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.25rem; /* 277.778% */
+  }
+  
+  .settings input {
+    margin-left: 10px;
+  }
+  
+  .save-button {
+    border-radius: 3.75rem;
+    border: 3px solid #000;
+    background: rgba(255, 126, 72, 0.64);
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 400;
+  }
+  
+  .save-button:hover {
+    background-color: #FF6347;
+  }
+  
